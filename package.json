@@ -1,0 +1,12 @@
+{
+  "name": "pokedexjs",
+  "version": "1.0.0",
+  "description": "A simple pokedex in NodeJS",
+  "main": "server.js",
+  "author": "Edy Segura",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}
