@@ -15,7 +15,7 @@ app.get("/", (request, response) => {
 })
 
 //pokeApi
-app.use("/api/pokemons", require("app/pokeApi"))
+app.use("/api/pokemons", require("./app/pokeApi"))
 
 //start server
 const hostname = "localhost"

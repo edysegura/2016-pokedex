@@ -3,7 +3,7 @@
 //dependencies
 const express = require("express")
 const router = express.Router()
-const pokeDB = require("./pokeDB")
+const pokeDB = require("./pokeDB.json")
 
 //private
 function catchPoke(pokeId) {
@@ -11,6 +11,10 @@ function catchPoke(pokeId) {
 }
 
 //poke api
+router.get("/", (request, response) => {
+    response.json(pokeDB)
+})
+
 router.get("/:pokeId", (request, response) => {
     let pokeId = request.params.pokeId
     let pokeData = catchPoke(pokeId)
