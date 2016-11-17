@@ -14,6 +14,9 @@ app.get("/", (request, response) => {
     response.sendFile("index.html")
 })
 
+//pokeApi
+app.use("/api/pokemons", require("app/pokeApi"))
+
 //start server
 const hostname = "localhost"
 const port = 3000
