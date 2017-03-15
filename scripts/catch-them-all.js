@@ -39,7 +39,7 @@ function pad(n, width, z) {
   return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
 }
 
-for(var index = 1; index < 152; index++) {
+for(var index = 1; index < 252; index++) {
     var pokemonNumber = pad(index, 3); 
     catchPokemon(pokemonNumber);
 }
